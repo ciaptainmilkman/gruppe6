@@ -1,798 +1,240 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-      min-height: 100vh;
-      background: black;
-      background-size: cover;
-      background-position: center;
-      font-family: Trebuchet;
-  }
-  .header{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 1.3rem 10%;
-      display: flex; 
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-  }
-  .header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-      z-index: -1;
-}
-  .header::after{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: black;
-      transition: 0.1s;
-  }
-  .header:hover::after{
-      left: 100%;
-  }
-  .logo{
-      width: 10%;
-    }
-  .navbar a {
-      font-size: 1.15rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 2.5rem;
-  }
-  #check {
-      display: none;
-  }
-  .icons{
-      position: absolute;
-      right: 5%;
-      font-size: 2.8rem;
-      color: #fff;
-      cursor: pointer;
-      display: none;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: black;
-    min-width: 200px;
-    z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-  /*end of header+navbar styling*/
-  /* styling of videoe starts   */
-  .video{
+/* CSS RESET */
 
-    position: absolute;
-    margin-top: -80%;
-    width: 100%;
-}
-  /*start of image styling*/
-  #bue {
-    position: static;
-    z-index: 20;
-    width: 100%;
+html, body, header, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, main, nav, output, ruby, section, summary, time, mark, audio, video { 
+
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+	font: inherit; 
+    vertical-align: baseline;
 }
 
-.bue2{
-    position: static;
-    margin-top: -9%;
- z-index: 20;   
- width: 100%;
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fcf7f7;
+    background-color: #141414;
+    text-align: center;
 }
 
-.bue3 {
-    position: static;
-    z-index: 20;
+section {
+    position: relative; /* Sørger for at overskiften i header kan placeres ovenpå billedet */
+    display: flex; /* Sørger for at vi kan placere billedteksten i midten af skærmen */
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+section img {
     width: 100%;
-    margin-top: -9%;
+    height: auto;
 }
-.bue4{
-    position: static;
-    z-index: 20;
-    width: 100%;
-    margin-top: -9%;
-}
-.bue5{
-    position: static;
-    z-index: 20;
-    width: 100%;
-    margin-top: 10%;
-}
-.bue6{
-    position: static;
-    z-index: 20;
-    width: 110%;
-    margin-top: 20%;
-}
-.kidss{
-    z-index: -5;
-}
-.kid{
-    position: relative;
-    z-index: -10;
-    height: 5%;
-    margin-top: -11%;
-}
-.battlebeam{
-    position: relative;
-    z-index: -10;
-    height: 5%;
-    margin-top: -11%;
-}
-.bday{
-    position: relative;
-    z-index: -10;
-    height: 5%;
-    margin-top: -11%;
-}
-  /*end of image styling*/
-  /*start of btn styling*/
-  .btn{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
+
+/* Centreret tekst */
+section h1 {
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Sørger for at overskriften sidder i midten af billedet både vandret og lodret */
+    font-size: 3em;
     font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 36%;
-    margin-top: 10%;
 }
-.btn--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
+
+p { 
+    width: 75%;
+    line-height: 180%;   
 }
-.btn2{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 36%;
-    margin-top: -0%;
+
+main {
+    display: flex; /* Sørger for at alle elementerne i main hænger sammen uden at der kommer "huller" af luft imellem */
+    flex-direction: column;
 }
-.btn2--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
+
+.børne_arrangementer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Sørger for at knapperne på siden med forskellige børnearrangementer er placeret i midten */
 }
-.btn3{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 36%;
-    margin-top: 7%;
-}
-.btn3--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn4{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 6%;
-    margin-top: 40%;
-}
-.btn4--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn5{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 6%;
-    margin-top: 40%;
-}
-.btn5--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn6{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 6%;
-    margin-top: 40%;
-}
-.btn6--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn7{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 6%;
-    margin-top: 40%;
-}
-.btn7--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn8{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 6%;
-    margin-top: 40%;
-}
-.btn8--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn9{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 6%;
-    margin-top: 40%;
-}
-.btn9--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn10{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 30%;
-    margin-top: 10%;
-}
-.btn10--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn11{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 30%;
-    margin-top: 10%;
-}
-.btn11--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn12{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 30%;
-    margin-top: 10%;
-}
-.btn12--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-.btn13{
-    border-radius: 60px;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
-    cursor: pointer;
-    z-index: 8;
-    margin-left: 30%;
-    margin-top: 10%;
-}
-.btn13--outline{
-    background: #afcb67 ;
-    color: black;
-    border: 2px solid black;
-}
-  /*end of btn stylinh*/
-  /*stat of styling for cards*/
   
-    
-  
-
-  .col{
-    flex-basis: 50%;
-  }
-  .card{
-    width: 200px;
-    height: 230px;
+.arrangementer_btn {
     display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card-2{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card3{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card4{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card5{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card6{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-.card2{
-  width: 430px;
-  height: 230px;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 15px; 
-  box-sizing: border-box;
-  cursor: pointer;
-  margin-top: 10px 15px;
-  background-color: #1f1e1e;
-  margin-top: 50%;
-  margin-left: 10%;
-  border: black;
-}
-.card7{
-    width: 430px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card8{
-    width: 430px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-  .card9{
-    width: 430px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px; 
-    box-sizing: border-box;
-    cursor: pointer;
-    margin-top: 10px 15px;
-    background-color: #1f1e1e;
-    margin-top: 50%;
-    margin-left: 10%;
-    border: black;
-  }
-
-
-/*footer styling start*/
-footer {
-    padding: 5px;
-    background-color: black;
-  }
-small{
-    color: white;
-}
-
-.footer-col, a{
-    font-size: 16px;
-    text-transform: capitalize;
+    width: 65%;
+    height: auto;
+    font-size: 1em;
+    color: #141414;
+    background-color: #afcb67;
     text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    transition: all 0.3s;
-}
-.footer-col a:hover{
-    color: #ffffff;
-    padding-left: 10px;
-}
-.footerlogo{
-    width: 25%;
-    margin-left: 40%;
-}
-.icon{
-    margin-left: 45%;
+    border-radius: 60px;
+    padding: 45px 32px;
+    margin-bottom: 50px;
 }
 
-
-.footer-col .social-links a:hover{
-    color: #24262b;
-    background: #ffffff;
-
+#blue_btn {
+    background-color: #47a9da;
 }
-/*end of footer styling*/
-/*text styling*/
-h2{ 
-    color: white;
+
+#red_btn {
+    background-color: #f7505a;
+}
+
+.bold_text {
+    font-weight: 600;
+}
+
+.green_bold_text {
+    font-weight: 600;
+    color:#afcb67;
+}
+
+.margin_top {
+    margin-top: 20px;
+}
+
+.margin_bottom {
+    margin-bottom: 20px;
+}
+
+#black_text {
+    color: #141414;
+}
+
+#black_bold_text {
+    font-weight: 600;
+    color:#141414;
+}
+
+#red_bold_text {
+    font-weight: 600;
+    color: #f7505a;
+}
+
+.rød_bue_container {
+    background-color: #f7505a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    z-index: 100;
+    width: 100%;
 }
-.hg2{
-    margin-top: 90%;
+
+.white_text {
+    color: #fcf7f7;
 }
-.hh2{
-    color: #f7505a;
+
+img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 2em; /* Sørger for at gøre skriftstørrelsen på alle h3 det dobbelte af standarden for h3-overskrifter */
+    font-weight: 600;
+}
+
+ul {
+    line-height: 300%;
+    list-style-position: inside; /* Sørger for at punkterne er centreret ligesom teksten */
+    width: 75%;
+    margin-top: 20px;
+}
+
+.blå_bue_container {
+    background-color: #47a9da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+button {
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    background: #afcb67;
+    color: #141414;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #141414;
+    font-weight: 600;
+}
+
+.aldersgrupper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  }
+
+ 
+  /* Styleregler til de 3 classes (card, card-header, card-main)!*/
+
+.card {
+    width: 170px;
+    display: flex; /* denne div er "parent" og flex-container. Child-elementerne nedarver flex og er nu flex-items*/
+    flex-direction: column;
+    border: 1px solid #afcb67;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card-header {
     text-align: center;
+    border-bottom: 1px solid #afcb67;
+    background-color: #141414;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-span{
-    color: #f7505a;
-    text-transform: capitalize;
+
+.card-main {
+    display: flex; /* denne div er "parent" og flex-container. Child-elementerne nedarver flex og er nu flex-items til denne container*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-h1{ 
-    color: #f7505a;
-    text-align: center;
+
+.card_bred {
+    width: 340px;
+    display: flex; /* denne div er "parent" og flex-container. Child-elementerne nedarver flex og er nu flex-items*/
+    flex-direction: column;
+    border: 1px solid #afcb67;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px;
 }
-.hh1{
-    color: white;
-    text-align: center;
-    z-index: 100;
-}
-.hh3{
-margin-left: 26%;
-}
-.hhh3{
-    margin-left: 26%;
-}
-.hhhhhhg4{
-    margin-left: 40%;
-}
-h3{
-    color: white;
-    z-index: 8;
-    margin-left: 38%;
-    margin-top: -60%;
-    font-size: 50px;
-}
-.card-text{
-    font-size: 35px;
-    margin-left: 20%;
-    color: #f7505a;
-    text-decoration: underline ;
-    
-}
-.card-text3{
-    font-size: 35px;
-    margin-left: 25%;
-    color: #f7505a;
-    text-decoration: underline ;
-}
-.card-text5{
-    font-size: 35px;
-    margin-left: 15%;
-    color: #f7505a;
-    text-decoration: underline ;
+
+.card-main h4 {
+    font-size: 1.5em;
 }
 
 
-.hhhx{
-    color: white;
-}
-.hhhhx{
-    font-size: larger;
-    color: #24262b;
-}
-.hhhhx2{
-    font-size: larger;
-    color: #24262b;
-    margin-left: 45%;
-}
-.hhhhhx5{
-    color: #1f1e1e;
-}
-.hhx4{
-    margin-top: -60%;
-    color: white;
-}
-.hhhhhx6{
-    margin-left: 40%;
-}
+@media only screen and (min-width: 768px) {
 
-.card-text2{
-    font-size: 20px;
-    margin-top: 15%;
-    color: white;
-}
-.card-text4{
-    font-size: 20px;
-    margin-top: 15%;
-    margin-left: 42%;
-    color: white;
-}
-h4{
-    color: white;
-    z-index: 8;
-    font-size: 19px;
-    margin-left: 26%;
-    line-height: 2;
-}
-.hs {
-    color: black;
-    z-index: 8;
-    font-size: 19px;
-    margin-left: 26%;
-    line-height: 2;
-}
-.hss {
-    color: white;
-    z-index: 8;
-    font-size: 19px;
-    margin-left: 26%;
-    line-height: 2;
-}
-.hx{
-    color: white;
-    z-index: 8;
-    font-size: 19px;
-    margin-left: 26%;
-    line-height: 2;
-}
-
-.h4{
-    color: black;
-    margin-left: 20.5%;
-    margin-top: -1%;
-}
-.hgg{ margin-top: 50%;
-
-}
-.hhh4{
-    color: black;
-    margin-left: 25%;
-    margin-top: -1%;
-}
-.hhhh4{
-    color: black;
-    margin-left: 26%;
-    margin-top: -1%;
-}
-.hhhhh4{
-    color: black;
-    margin-left: 20%;
-    margin-top: -1%;
-}
-.hhhhhg4{
-    margin-left: 20%;
-}
-.hh4{
-    margin-left: 43%;
-    margin-top: 10%
-}
-.hhx{
-    color: white;
-    margin-top: -56%;
-}
-.copy{
-    margin-left: 50%;
-    color: white;
-}
-.hhhhhx3{
-    color: black;
-    margin-left: 20%;
-    margin-top: -1%;
-}
-.hhhhhx4{
-    color: black;
-    margin-left: 20%;
-    margin-top: -1%;
-}
-.hhhhx7{
-    font-size: larger;
-    color: #24262b;
-    margin-left: 43%;
-}
-p{
-    font-size: 100%;
-    margin-left: 29%;
-    color: #fff;
-}
-h5{
-    margin-left: 26%;
-    color: #fff;
-}
-.fhop{
-    margin-top: 0%;
-    color: white;
-    z-index: 20;
-    font-size: 20px;
-}
-
-.h5{
-    color: black;
-}
-.hh5{
-    color: black;
-    margin-left: 20%;
-}
-.hhhhhhhhh4
-{ 
-    margin-left: 20%;
-    
-}
-.span{
-    color: black;
-}
-#klipteskt{
-    color: black;
-}
-
-/*end of styling of text*/
-@media (min-width: 992px) {
-    .header{
-        padding: 1.3rem 5%;
-    }
-    img {
-        width: 50%;
-        z-index: -51;
+    button:hover {
+        background: black;
+        color: #fff;
     }
 }
+
 @media (max-width: 768px) {
     .icons{
         display: inline-flex;
@@ -825,22 +267,24 @@ h5{
         z-index: 1;
         position: relative;
     }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    transform: translateY(16px);
-    background: black;
-    min-width: 160px;
-    box-shadow: black;
-    z-index: 1;
-    margin-top: 5px;
-}
-.logo{
-    width: 10%;
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        transform: translateY(16px);
+        background: black;
+        min-width: 160px;
+        box-shadow: black;
+        z-index: 1;
+        margin-top: 5px;
+    }
+    .logo{
+        width: 10%;
+    }
+        
     #check:checked~.navbar{
         height: 30.7rem;
     }
+    
     .navbar a {
         display: block;
         font-size: 1.2rem;
@@ -849,249 +293,12 @@ h5{
         transform: translateY(-50px);
         opacity: 0;
     }
+    
     #check:checked~.navbar a {
         transform: translateY(0);
         opacity: 1;
         transition-delay:calc(.15s * var(--i));
     }
 }
-@media screen and (min-width: 1024px){
-    .btn{
-    font-size: 1.5rem;
-    width: 25%;
-    }
-    .btn--outline:hover{
-        background: black;
-        color: #fff;
-    }
-}
-img{
-    width: 100%;
-}
-@media (min-width: 1158px) {
-    /*pc media queries for btn animation and video*/
-        .video{
-        width: 100%;
-        height: 70vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        margin-top: 9.9%;
-        }
-        .btn--outline:hover{
-            background: #afcb67;
-            color: #fff;
-        }
-        .btn{
-            margin-top: 36.6%;
-            margin-left: 40%;
-        }
-    }
-    @media (min-width: 1172px){
-        /*this part is hate*/
-        .bue{
-         position: static;
-        z-index: 20;
-        width: 100%; 
-        margin-top: 4%;
-        }
-        h2{
-        
-        margin-top: 1%;
 
-        }
-        
-        .kid{
-            position: relative;
-            z-index: -10;
-            height: 5%;
-            margin-top: 30%;
-        }
-        .bue2{
-            position: static;
-            margin-top: -30%;
-         z-index: 20;   
-         width: 100%;
-         height: 90%;
-        }
 
-        .bue3 {
-            position: static;
-            z-index: 20;
-            width: 100%;
-            height: 90%;
-        }
-        .bue4 {
-            margin-top: -10%;
-            height: -50%;
-        }
-        .bday{
-            margin-top: 20%;
-        }
-        .battlebeam{
-            position: relative;
-            z-index: -10;
-            height: 5%;
-            margin-top: 30%;
-        }
-        .hg2{
-            margin-top: 50%;
-        }
-        .hh3{
-            margin-left: 43%;
-            margin-top: -55%;
-        }
-        h4{
-            margin-left: 43%;
-        }
-        h3{
-            color: white;
-            z-index: 8;
-            margin-left: 42.5%;
-            margin-top: -60%;
-            font-size: 50px;
-        }
-        .h4{
-            color: black;
-            margin-left: 34%;
-            margin-top: 1%;
-        }
-        .btn--outline
-        {
-            margin-top: 2%;
-            margin-left: 38%;
-        }       
-        
-        h3{
-            margin-left: 43%;
-        }
-        .btn2{
-            margin-left: 43%;
-        }
-        .h4{
-            margin-left: 39%;
-        }
-        .hx{
-            margin-left: 41.5%;
-        }
-        .hxx{
-            margin-left: 41.3%;
-            margin-top: 1%;
-        }
-        .hhh4{
-            margin-left: 41%;
-            margin-top: 0.1%;
-        }
-        .btn2
-        {
-            margin-left: 44.1%;
-        }
-        .hhh3{
-        margin-left: 42%;
-        margin-top: -56%;
-        }
-        .hhhh4{
-        margin-left: 42%;
-        margin-top: 0.2%;
-        }
-        .hs{
-            margin-left: 39%;
-        }
-        .hss{
-            margin-left: 39%;
-            font-weight: 900;
-        }
-        .btn3{
-        margin-left: 45%;
-        margin-top: 1%;
-        }
-        .hhhhhg4{
-            margin-left: 40%;
-            margin-top: -62%;
-        }
-        .hhhhh4{
-            margin-top: 1%;
-            margin-left: 41%;
-        }
-        .hh5{
-            margin-left: 38%;
-        }
-        .hhhhhhhhh4{
-            margin-left: 41%;
-        }
-        .hh4{
-            margin-top: 45%;
-            margin-left: 48%;
-        }
-        .p{
-            margin-left: 44%;
-        }
-        .footerlogo{
-            margin-left: 45%;
-            width: 9%;
-        }
-
-        .icon{
-            margin-left:48%;
-            margin-top: -1%;
-        }
-        .copy{
-        margin-left: 1%;
-        }
-        .hhhhhhg4{
-            margin-left: 50%;
-        }
-        .hgg{
-            margin-top: 60%;
-        }
-        .hhhhhx4{
-            margin-left: 42.5%;
-            margin-top: 1%;
-        }
-        .hh42{
-            margin-top: 50%;
-            margin-left: 46%;
-        }
-    }
-    .card{ margin-top: 50%;
-        margin-left: 28%;
-}
-    .card-2
-    { margin-top: 2%;
-        margin-left: 28%;
-}
-.card3
-{ margin-top: 0%;
-    margin-left: 28%;
-}
-.card4    
-{ margin-top: 5%;
-    margin-left: 28%;
-}
-.card5{ margin-top: 2%;
-    margin-left: 28%;
-}
-.card6{ margin-top: 5%;
-            margin-left: 28%;
-    }
-    .card2{ 
-        margin-left: 20%;
-}
-    .card7{ 
-        margin-left: 20%;
-}
-    .card8{ margin-top: -20%;
-        margin-left: 20%;
-}
-    .card9{ margin-top: 10%;
-        margin-left: 20%;
-}
-.bue6{
-    margin-top: 20%;
-
-}
