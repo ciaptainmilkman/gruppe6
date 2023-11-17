@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
   }
   body{
       min-height: 100vh;
       background: black;
       background-size: cover;
       background-position: center;
+      font-family: Trebuchet;
   }
   .header{
       position: fixed;
@@ -84,7 +84,7 @@
   .video{
 
     position: absolute;
-    margin-top: 1%;
+    margin-top: -80%;
     width: 100%;
 }
   /*start of image styling*/
@@ -113,6 +113,21 @@
     width: 100%;
     margin-top: -9%;
 }
+.bue5{
+    position: static;
+    z-index: 20;
+    width: 100%;
+    margin-top: 10%;
+}
+.bue6{
+    position: static;
+    z-index: 20;
+    width: 110%;
+    margin-top: 20%;
+}
+.kidss{
+    z-index: -5;
+}
 .kid{
     position: relative;
     z-index: -10;
@@ -140,12 +155,11 @@
     font-weight: 600;
     margin: 1rem 0;
     padding: 0.5rem 2rem;
-    text-transform:uppercase ;
     white-space: nowrap;
     cursor: pointer;
     z-index: 8;
     margin-left: 36%;
-    margin-top:58.5%;
+    margin-top: 10%;
 }
 .btn--outline{
     background: #afcb67 ;
@@ -159,7 +173,6 @@
     font-weight: 600;
     margin: 1rem 0;
     padding: 0.5rem 2rem;
-    text-transform:uppercase ;
     white-space: nowrap;
     cursor: pointer;
     z-index: 8;
@@ -178,7 +191,6 @@
     font-weight: 600;
     margin: 1rem 0;
     padding: 0.5rem 2rem;
-    text-transform:uppercase ;
     white-space: nowrap;
     cursor: pointer;
     z-index: 8;
@@ -190,7 +202,337 @@
     color: black;
     border: 2px solid black;
 }
+.btn4{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 6%;
+    margin-top: 40%;
+}
+.btn4--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn5{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 6%;
+    margin-top: 40%;
+}
+.btn5--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn6{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 6%;
+    margin-top: 40%;
+}
+.btn6--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn7{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 6%;
+    margin-top: 40%;
+}
+.btn7--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn8{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 6%;
+    margin-top: 40%;
+}
+.btn8--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn9{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 6%;
+    margin-top: 40%;
+}
+.btn9--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn10{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.btn10--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn11{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.btn11--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn12{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.btn12--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
+.btn13{
+    border-radius: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 8;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.btn13--outline{
+    background: #afcb67 ;
+    color: black;
+    border: 2px solid black;
+}
   /*end of btn stylinh*/
+  /*stat of styling for cards*/
+  
+    
+  
+
+  .col{
+    flex-basis: 50%;
+  }
+  .card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card-2{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card3{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card4{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card5{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card6{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+.card2{
+  width: 430px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px; 
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 10px 15px;
+  background-color: #1f1e1e;
+  margin-top: 50%;
+  margin-left: 10%;
+  border: black;
+}
+.card7{
+    width: 430px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card8{
+    width: 430px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+  .card9{
+    width: 430px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    background-color: #1f1e1e;
+    margin-top: 50%;
+    margin-left: 10%;
+    border: black;
+  }
+
+
 /*footer styling start*/
 footer {
     padding: 5px;
@@ -220,6 +562,7 @@ small{
     margin-left: 45%;
 }
 
+
 .footer-col .social-links a:hover{
     color: #24262b;
     background: #ffffff;
@@ -232,10 +575,10 @@ h2{
     text-align: center;
     z-index: 100;
 }
-hg2{
-    margin: ;
+.hg2{
+    margin-top: 90%;
 }
-hh2{
+.hh2{
     color: #f7505a;
     text-align: center;
 }
@@ -247,11 +590,19 @@ h1{
     color: #f7505a;
     text-align: center;
 }
+.hh1{
+    color: white;
+    text-align: center;
+    z-index: 100;
+}
 .hh3{
 margin-left: 26%;
 }
 .hhh3{
     margin-left: 26%;
+}
+.hhhhhhg4{
+    margin-left: 40%;
 }
 h3{
     color: white;
@@ -260,6 +611,61 @@ h3{
     margin-top: -60%;
     font-size: 50px;
 }
+.card-text{
+    font-size: 35px;
+    margin-left: 20%;
+    color: #f7505a;
+    text-decoration: underline ;
+    
+}
+.card-text3{
+    font-size: 35px;
+    margin-left: 25%;
+    color: #f7505a;
+    text-decoration: underline ;
+}
+.card-text5{
+    font-size: 35px;
+    margin-left: 15%;
+    color: #f7505a;
+    text-decoration: underline ;
+}
+
+
+.hhhx{
+    color: white;
+}
+.hhhhx{
+    font-size: larger;
+    color: #24262b;
+}
+.hhhhx2{
+    font-size: larger;
+    color: #24262b;
+    margin-left: 45%;
+}
+.hhhhhx5{
+    color: #1f1e1e;
+}
+.hhx4{
+    margin-top: -60%;
+    color: white;
+}
+.hhhhhx6{
+    margin-left: 40%;
+}
+
+.card-text2{
+    font-size: 20px;
+    margin-top: 15%;
+    color: white;
+}
+.card-text4{
+    font-size: 20px;
+    margin-top: 15%;
+    margin-left: 42%;
+    color: white;
+}
 h4{
     color: white;
     z-index: 8;
@@ -267,10 +673,35 @@ h4{
     margin-left: 26%;
     line-height: 2;
 }
+.hs {
+    color: black;
+    z-index: 8;
+    font-size: 19px;
+    margin-left: 26%;
+    line-height: 2;
+}
+.hss {
+    color: white;
+    z-index: 8;
+    font-size: 19px;
+    margin-left: 26%;
+    line-height: 2;
+}
+.hx{
+    color: white;
+    z-index: 8;
+    font-size: 19px;
+    margin-left: 26%;
+    line-height: 2;
+}
+
 .h4{
     color: black;
     margin-left: 20.5%;
     margin-top: -1%;
+}
+.hgg{ margin-top: 50%;
+
 }
 .hhh4{
     color: black;
@@ -294,9 +725,28 @@ h4{
     margin-left: 43%;
     margin-top: 10%
 }
+.hhx{
+    color: white;
+    margin-top: -56%;
+}
 .copy{
     margin-left: 50%;
     color: white;
+}
+.hhhhhx3{
+    color: black;
+    margin-left: 20%;
+    margin-top: -1%;
+}
+.hhhhhx4{
+    color: black;
+    margin-left: 20%;
+    margin-top: -1%;
+}
+.hhhhx7{
+    font-size: larger;
+    color: #24262b;
+    margin-left: 43%;
 }
 p{
     font-size: 100%;
@@ -306,6 +756,12 @@ p{
 h5{
     margin-left: 26%;
     color: #fff;
+}
+.fhop{
+    margin-top: 0%;
+    color: white;
+    z-index: 20;
+    font-size: 20px;
 }
 
 .h5{
@@ -413,6 +869,7 @@ img{
     width: 100%;
 }
 @media (min-width: 1158px) {
+    /*pc media queries for btn animation and video*/
         .video{
         width: 100%;
         height: 70vh;
@@ -436,6 +893,7 @@ img{
         }
     }
     @media (min-width: 1172px){
+        /*this part is hate*/
         .bue{
          position: static;
         z-index: 20;
@@ -466,8 +924,14 @@ img{
             position: static;
             z-index: 20;
             width: 100%;
-            margin-top: -2%;
             height: 90%;
+        }
+        .bue4 {
+            margin-top: -10%;
+            height: -50%;
+        }
+        .bday{
+            margin-top: 20%;
         }
         .battlebeam{
             position: relative;
@@ -476,13 +940,14 @@ img{
             margin-top: 30%;
         }
         .hg2{
-            margin-top: 40%;
+            margin-top: 50%;
         }
         .hh3{
-            margin-left: 35%;
+            margin-left: 43%;
+            margin-top: -55%;
         }
         h4{
-            margin-left: 35%;
+            margin-left: 43%;
         }
         h3{
             color: white;
@@ -494,7 +959,139 @@ img{
         .h4{
             color: black;
             margin-left: 34%;
+            margin-top: 1%;
+        }
+        .btn--outline
+        {
+            margin-top: 2%;
+            margin-left: 38%;
+        }       
+        
+        h3{
+            margin-left: 43%;
+        }
+        .btn2{
+            margin-left: 43%;
+        }
+        .h4{
+            margin-left: 39%;
+        }
+        .hx{
+            margin-left: 41.5%;
+        }
+        .hxx{
+            margin-left: 41.3%;
+            margin-top: 1%;
+        }
+        .hhh4{
+            margin-left: 41%;
+            margin-top: 0.1%;
+        }
+        .btn2
+        {
+            margin-left: 44.1%;
+        }
+        .hhh3{
+        margin-left: 42%;
+        margin-top: -56%;
+        }
+        .hhhh4{
+        margin-left: 42%;
+        margin-top: 0.2%;
+        }
+        .hs{
+            margin-left: 39%;
+        }
+        .hss{
+            margin-left: 39%;
+            font-weight: 900;
+        }
+        .btn3{
+        margin-left: 45%;
+        margin-top: 1%;
+        }
+        .hhhhhg4{
+            margin-left: 40%;
+            margin-top: -62%;
+        }
+        .hhhhh4{
+            margin-top: 1%;
+            margin-left: 41%;
+        }
+        .hh5{
+            margin-left: 38%;
+        }
+        .hhhhhhhhh4{
+            margin-left: 41%;
+        }
+        .hh4{
+            margin-top: 45%;
+            margin-left: 48%;
+        }
+        .p{
+            margin-left: 44%;
+        }
+        .footerlogo{
+            margin-left: 45%;
+            width: 9%;
+        }
+
+        .icon{
+            margin-left:48%;
             margin-top: -1%;
         }
-        
+        .copy{
+        margin-left: 1%;
+        }
+        .hhhhhhg4{
+            margin-left: 50%;
+        }
+        .hgg{
+            margin-top: 60%;
+        }
+        .hhhhhx4{
+            margin-left: 42.5%;
+            margin-top: 1%;
+        }
+        .hh42{
+            margin-top: 50%;
+            margin-left: 46%;
+        }
     }
+    .card{ margin-top: 50%;
+        margin-left: 28%;
+}
+    .card-2
+    { margin-top: 2%;
+        margin-left: 28%;
+}
+.card3
+{ margin-top: 0%;
+    margin-left: 28%;
+}
+.card4    
+{ margin-top: 5%;
+    margin-left: 28%;
+}
+.card5{ margin-top: 2%;
+    margin-left: 28%;
+}
+.card6{ margin-top: 5%;
+            margin-left: 28%;
+    }
+    .card2{ 
+        margin-left: 20%;
+}
+    .card7{ 
+        margin-left: 20%;
+}
+    .card8{ margin-top: -20%;
+        margin-left: 20%;
+}
+    .card9{ margin-top: 10%;
+        margin-left: 20%;
+}
+.bue6{
+    margin-top: 20%;
+
+}
